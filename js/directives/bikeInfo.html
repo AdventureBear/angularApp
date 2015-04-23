@@ -1,0 +1,13 @@
+
+    <img ng-src="{{ bike.image }}" >
+    <p class="model"> Model: {{ bike.model | uppercase }} </p>
+    <p class="gearing"> Gearing: {{ bike.gearing }} </p>
+    <p class="wheelsize"> Wheelsize: {{ bike.wheelsize }} </p>
+    <p class="frame">Frame Material: {{ bike.frame }} </p>
+    <p class="price">{{ bike.price | currency }} </p>
+    <p class="date"> Next Build Date: {{ bike.nextBuildDate | date }}</p>
+    <div class="rating">
+        <p class="likes" ng-click="plusOne($index)">+{{ bike.likes }}</p>
+        <p class="dislikes" ng-click="minusOne($index)">{{ bike.dislikes }}</p>
+    </div>
+
